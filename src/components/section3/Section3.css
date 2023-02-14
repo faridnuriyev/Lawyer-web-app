@@ -1,0 +1,254 @@
+:root {
+  --sec-3-bg: #fff;
+  --text-color: #252b42;
+  --second-text-color: #737373;
+  --circle-color: #295c7a;
+}
+.sec-3 {
+  background: var(--sec-3-bg);
+}
+.sec-3-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  /* align-items: center; */
+  /* padding: 0 20px; */
+}
+.sec-3-article {
+  display: flex;
+ justify-content: center;
+  align-items: center;
+  
+  flex-direction: column;
+  margin-bottom: 150px;
+}
+.sec-3-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 100px 0;
+}
+.sec-3-text h2 {
+  font-family: Martel;
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+.sec-3-text p {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--second-text-color);
+  width: 200px;
+  text-align: center;
+}
+.videoBG {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../../../public/assets/img/sec-3-video-cover.jpg) center/cover;
+  width: 300px;
+  height: 442px;
+}
+.playCircle {
+  background-color: var(--circle-color);
+  border-radius: 50%;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-3-card-text {
+  margin: 70px 0;
+  width: 320px;
+}
+.sec-3-card-text h2 {
+  font-family: Martel;
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--text-color);
+  text-align: left;
+  margin-bottom: 10px;
+}
+.sec-3-card-text p {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--second-text-color);
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.sec-3-card-icon1,
+.sec-3-card-icon2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.sec-3-card-icon1 {
+  margin-bottom: 30px;
+}
+.sec-3-icon-1-text h5,
+.sec-3-icon-2-text h5 {
+  font-family: Martel;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  color: var(--text-color);
+}
+.sec-3-icon-1-text h6,
+.sec-3-icon-2-text h6 {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--second-text-color);
+  text-align: left;
+}
+@media only screen and (min-width: 768px) {
+  .sec-3-text p {
+    width: 468px;
+  }
+  .sec-3-article {
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .videoBG {
+    width: 600px;
+  }
+
+  
+}
+
+
+/*@import url("https://fonts.googleapis.com/css2?family=Martel:wght@700;900&family=Open+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+:root {
+  --sec-3-bg: #fff;
+  --text-color: #252b42;
+  --second-text-color: #737373;
+  --circle-color: #295c7a;
+}
+.sec-3 {
+  background: var(--sec-3-bg);
+}
+.sec-3-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 0 20px; 
+}
+.sec-3-article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 150px;
+}
+.sec-3-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 100px 0;
+}
+.sec-3-text h2 {
+  font-family: Martel;
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+.sec-3-text p {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--second-text-color);
+  width: 200px;
+  text-align: center;
+}
+.videoBG {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../../public/assets/img/sec-3-video-cover.jpg) center/cover;
+  width: 300px;
+}
+.playCircle {
+  background-color: var(--circle-color);
+  border-radius: 50%;
+  margin: 150px 100px;
+  cursor: pointer;
+}
+.playCircle > img {
+  margin: 35px;
+}
+.sec-3-card-text {
+  margin: 70px 0;
+  width: 320px;
+}
+.sec-3-card-text h2 {
+  font-family: Martel;
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--text-color);
+  text-align: left;
+  margin-bottom: 10px;
+}
+.sec-3-card-text p {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--second-text-color);
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.sec-3-card-icon1,
+.sec-3-card-icon2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.sec-3-card-icon1 {
+  margin-bottom: 30px;
+}
+.sec-3-icon-1-text h5,
+.sec-3-icon-2-text h5 {
+  font-family: Martel;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  color: var(--text-color);
+}
+.sec-3-icon-1-text h6,
+.sec-3-icon-2-text h6 {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--second-text-color);
+  text-align: left;
+}
+@media only screen and (min-width: 768px) {
+  .sec-3-text p {
+    width: 468px;
+  }
+  .sec-3-article {
+    flex-direction: row;
+  }
+  .videoBG {
+    width: 600px;
+  }
+  .playCircle {
+    margin: 170px 250px;
+  }
+  .sec-3-card-text {
+    margin: 0 0 0 120px;
+  }
+}*/

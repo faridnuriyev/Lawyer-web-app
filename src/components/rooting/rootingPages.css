@@ -1,0 +1,14 @@
+/* for product page */
+.product{
+    background: #4378f4;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.exampleForRooting{
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

@@ -1,0 +1,106 @@
+:root {
+  --sec-4-text-color: #fff;
+  --sec-4-bg: #fafafa;
+  --desktop-bg-2-color: #252b42;
+  --second-text-color: #737373;
+  --inpt-border-color: #e6e6e6;
+  --subscribe-btn-color: #d0a144;
+}
+.sec-4 {
+  background: var(--sec-4-bg);
+}
+.sec-4-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 80px 0;
+}
+.sec-4-icons img {
+  cursor: pointer;
+}
+
+.sec-4-subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 0;
+  background: linear-gradient(270deg, #295c7a -1.04%, #0072b5 100%);
+  border-radius: 2px;
+}
+.sec-4-subscribe h3 {
+  font-family: Martel;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  color: var(--sec-4-text-color);
+  width: 250px;
+}
+
+.subscribe-inpt {
+  border: 1px solid var(--inpt-border-color);
+  border-radius: 5px;
+}
+.subscribe-inpt input,
+button {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  height: 60px;
+  border: 0;
+}
+.subscribe-inpt input {
+  color: var(--second-text-color);
+  width: 200px;
+  text-align: left;
+  outline: none;
+  padding: 0 0 0 20px;
+}
+.subscribe-btn {
+  background: var(--subscribe-btn-color);
+  color: var(--sec-4-text-color);
+  cursor: pointer;
+  width: 115px;
+  transition: .5s all;
+}
+@media only screen and (min-width: 768px) {
+  .sec-4-content {
+    padding: 0 20px;
+  }
+  .sec-4-subscribe-desktop-bg {
+    background-color: var(--desktop-bg-2-color);
+    width: 100%;
+    height: 77px;
+  }
+  .sec-4-subscribe {
+    flex-direction: row;
+    top: 57px;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    gap: 0;
+    height: 124px;
+  }
+  .sec-4-icons {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0 0 0;
+    gap: 0;
+  }
+  .subscribe-inpt input {
+    width: 330px;
+  }
+  .subscribe-btn {
+    width: 120px;
+  }
+  .subscribe-btn:hover{
+    background: #ffab03a3;
+  }
+}
